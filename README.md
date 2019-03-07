@@ -13,7 +13,7 @@
 * [拉取远程分支到本地](#拉取远程分支到本地)
 * [内容修改完成后，提交到远程仓库](#内容修改完成后，提交到远程仓库)
 * [远程分支合并](#远程分支合并)
-* [GitHub上的README.md应该怎么写](#GitHub上的README.md应该怎么写)
+* [GitHub上的README.md应该怎么写](#github上的readmemd应该怎么写)
 
 ### git首次配置
     git config --global user.name 'ZHR63'
