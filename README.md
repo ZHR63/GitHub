@@ -13,6 +13,7 @@
 * [拉取远程分支到本地](#拉取远程分支到本地)
 * [内容修改完成后，提交到远程仓库](#内容修改完成后，提交到远程仓库)
 * [远程分支合并](#远程分支合并)
+* [GitHub上的README.md应该怎么写](#GitHub上的README.md应该怎么写)
 
 ### git首次配置
     git config --global user.name 'ZHR63'
@@ -93,3 +94,14 @@
     
     6.把本地的分支a同步到远程
         git push origin a
+
+
+### GitHub上的README.md应该怎么写
+
+> 先告诉大家一下基本概念**github上的README.md文件就是使用的Markdown语言编写的**
+
+1. 给出两个README.md在线编辑软件
+
+    http://mahua.jser.me/ 个人开发的，免费使用，非常赞！
+
+    http://maxiang.info/  已经发布的产品，可以免费在线编辑
