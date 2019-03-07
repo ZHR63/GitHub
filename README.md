@@ -6,6 +6,7 @@
 
 
 ## 目录
+* [在Windows上安装Git](#在Windows上安装Git)
 * [git首次配置](#git首次配置)
 * [本地与远程仓库的连接](#本地与远程仓库的连接)
 * [文件修改后再次提交到远程仓库](#文件修改后再次提交到远程仓库)
@@ -14,6 +15,11 @@
 * [内容修改完成后，提交到远程仓库](#内容修改完成后，提交到远程仓库)
 * [远程分支合并](#远程分支合并)
 * [GitHub上的README.md应该怎么写](#github上的readmemd应该怎么写)
+
+
+### 在Windows上安装Git
+
+从Git官网直接[下载安装程序](https://git-scm.com/downloads)
 
 ### git首次配置
     git config --global user.name 'ZHR63'
