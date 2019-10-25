@@ -23,30 +23,6 @@
 	git commit -m "内容"
 	git push origin master
 
-
-### 分支管理
-    1.创建分支
-        git branch 名称
-
-    2.查看各个分支当前指向的对象
-        git log --oneline --decorate
-
-    3.切换分支
-	    git checkout 名称
-		
-	4.推送分支
-	    git push origin 名称
-	
-	5.查看远程分支
-	    git branch -r
-	
-	6.查看所有分支
-	    git branch -a
-	
-	7.删除本地分支
-	    git branch -D 名称
-    
-
 ### 拉取远程分支到本地
     1.git init
 		
@@ -69,19 +45,52 @@
 	4.提交到远程仓库
 	    git push origin 分支名称
 
+* ### 分支操作
 
+    -       创建分支
+
+            git branch 名称
+
+    -       切换分支
+
+            git checkout 分支名称
+
+    -       查看各个分支当前指向的对象
+
+            git log --oneline --decorate
+
+    -       推送分支
+
+            git push origin 分支名称
+	
+    -       查看远程分支
+
+            git branch -r
+
+    -       查看所有分支
+
+            git branch -a
+
+    -       删除本地分支
+
+            git branch -D 分支名称
+
+	
 
 * ### 远程分支合并
 
     1.      git clone 远程项目链接
 
     2.      在本地新建一个与远程的分支名称相同的分支名称
+
             git checkout -b origin/分支名称
 
     3.      远程分支代码pull到本地
+
             git pull origin 分支名称
     
     4.      如何有冲突的代码
+
             git add .
 
     5.      git checkout  master
