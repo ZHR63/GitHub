@@ -119,32 +119,32 @@
 
  ![one](images/1.png)
 
-- ### 多人协作开发
+* ### 多人协作开发
 
-    - 1. 在项目的settings > Collaborators > Add collaborator 填写另一个开发者名称(对方的地址名称)，然后GigHub会发邮件等对方确认
+    1.      在项目的settings > Collaborators > Add collaborator 填写另一个开发者名称(对方的地址名称)，然后GigHub会发邮件等对方确认
 
-    - 2. 协同者拉去源码到本地
+    2.      协同者拉去源码到本地
 
-            - gig clone 远程仓库
+            gig clone 远程仓库
 
-    - 3. 协同者创建自己的分支
+    3.      协同者创建自己的分支
 
-            - git branch 分支名称
+            git branch 分支名称
 
-    - 4. 切换分支
+    4.      切换分支
 
-            - git checkout 分支名称
+            git checkout 分支名称
     
-    - 5. 推送分支
+    5.      推送分支
 
-            - git push origin 分支名称
+            git push origin 分支名称
     
-    - 6. 当协同者修改完成后
+    6.      当协同者修改完成后
 
-            - git checkout 分支名称
+            git checkout 分支名称
 
-            - git add .
+            git add .
 
-            - git commit -m '修改内容'
+            git commit -m '修改内容'
 
-            - git push origin 分支名称
+            git push origin 分支名称
