@@ -115,41 +115,36 @@
     http://maxiang.info/  已经发布的产品，可以免费在线编辑
 
 
-### 多人协作开发
 
-    1. 第一步, 在项目的settings > Collaborators > Add collaborator 填写另一个开发者名称(对方的地址名称)，然后GigHub会发邮件等对方确认
 
-![one](images/1.png)
+ ![one](images/1.png)
 
-    2. 对方会拉去源码到本地
+- ### 多人协作开发
+
+    - 1. 在项目的settings > Collaborators > Add collaborator 填写另一个开发者名称(对方的地址名称)，然后GigHub会发邮件等对方确认
+
+    - 2. 协同者拉去源码到本地
+
+            - gig clone 远程仓库
+
+    - 3. 协同者创建自己的分支
+
+            - git branch 分支名称
+
+    - 4. 切换分支
+
+            - git checkout 分支名称
     
-        - gig clone 远程仓库
+    - 5. 推送分支
 
-    3. 协同者会创建自己的分支
-
-        git branch 名称
-
-    4. 切换分支
-
-        git checkout 名称
+            - git push origin 分支名称
     
-    5. 推送分支
+    - 6. 当协同者修改完成后
 
-        git push origin 名称
-    
-    6. 当协同者修改完成后
+            - git checkout 分支名称
 
-        1.切换到分支
+            - git add .
 
-            git checkout 分支名称
+            - git commit -m '修改内容'
 
-        2.git add .
-
-
-        3.git commit -m '修改内容'
-
-        4.提交到远程仓库
-        
-            git push origin 分支名称
-        
-
+            - git push origin 分支名称
