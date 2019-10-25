@@ -23,34 +23,12 @@
 
 * ### 文件修改后再次提交到远程仓库
 
-        - git add .
+-       git add .
 
-	- git commit -m "内容"
+-       git commit -m "内容"
 
-	- git push origin master
+-       git push origin master
         
-
-### 拉取远程分支到本地
-    1.git init
-		
-	2.git remote add origin 远程仓库链接
-		
-	3.git fetch origin 远程仓库分支名称
-		
-	4.把分支内容拉取到本地
-	    git pull origin 远程分支名称
-
-    
-### 内容修改完成后，提交到远程仓库
-    1.切换到分支
-	    git checkout 分支名称
-			
-	2.git add .
-		
-	3.git commit -m '修改内容'
-		
-	4.提交到远程仓库
-	    git push origin 分支名称
 
 * ### 远程仓库版本回退
 
@@ -96,6 +74,33 @@
 -       删除本地分支
 
             git branch -D 分支名称
+
+
+* ### 拉取远程分支到本地
+
+        1. git init
+		
+	    2. git remote add origin 远程仓库链接
+		
+ 	    3. git fetch origin 远程仓库分支名称
+		
+   	    4. git pull origin 远程分支名称
+
+
+* ### 内容修改完成后，提交到远程仓库
+
+        1.切换到分支
+
+	        git checkout 分支名称
+			
+	    2.git add .
+		
+	    3.git commit -m '修改内容'
+		
+	    4.提交到远程仓库
+
+	        git push origin 分支名称
+	    
 
 	
 
