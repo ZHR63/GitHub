@@ -18,10 +18,17 @@
     一直回车
 
 
-### 文件修改后再次提交到远程仓库
-    git add .
-	git commit -m "内容"
-	git push origin master
+
+
+
+* ### 文件修改后再次提交到远程仓库
+
+        - git add .
+
+	- git commit -m "内容"
+
+	- git push origin master
+        
 
 ### 拉取远程分支到本地
     1.git init
@@ -45,33 +52,48 @@
 	4.提交到远程仓库
 	    git push origin 分支名称
 
+* ### 远程仓库版本回退
+
+-       1. 查看历史版本
+
+        git log --pretty=oneline       
+                
+-       2. 回退到上一个版本
+
+        git reset --hard HEAD^
+
+-       3. 强制推送到远程仓库
+
+        git push -f origin master
+        
+
 * ### 分支操作
 
-    -       创建分支
+-       创建分支
 
             git branch 名称
 
-    -       切换分支
+-       切换分支
 
             git checkout 分支名称
 
-    -       查看各个分支当前指向的对象
+-       查看各个分支当前指向的对象
 
             git log --oneline --decorate
 
-    -       推送分支
+-       推送分支
 
             git push origin 分支名称
 	
-    -       查看远程分支
+-       查看本地分支
 
-            git branch -r
+            git branch
 
-    -       查看所有分支
+-       查看所有远程分支
 
             git branch -a
 
-    -       删除本地分支
+-       删除本地分支
 
             git branch -D 分支名称
 
@@ -79,51 +101,57 @@
 
 * ### 远程分支合并
 
-    1.      git clone 远程项目链接
+-      git clone 远程项目链接
 
-    2.      在本地新建一个与远程的分支名称相同的分支名称
+-      在本地新建一个与远程的分支名称相同的分支名称
 
-            git checkout -b origin/分支名称
+            git checkout -b 分支名称
 
-    3.      远程分支代码pull到本地
+-      远程分支代码pull到本地
 
             git pull origin 分支名称
     
-    4.      如何有冲突的代码
+-      如何有冲突的代码
+        
+            用 git status 查看冲突文件
+
+            修改冲突代码后
 
             git add .
 
-    5.      git checkout  master
+            git commit -m '输入内容'
 
-    6.      git commit -m '提交'
+-      git checkout  master
 
-    7.      git push origin master
+-      git merge 分支名称
+
+-      git push origin master
 
 
 
 * ### 多人协作开发
 
-    1.      在项目的settings > Collaborators > Add collaborator 填写另一个开发者名称(对方的地址名称)，然后GigHub会发邮件等对方确认
+-      在项目的settings > Collaborators > Add collaborator 填写另一个开发者名称(对方的地址名称)，然后GigHub会发邮件等对方确认
 
-        ![one](images/1.png)
+  ![one](images/1.png)
 
-    2.      协同者拉去源码到本地
+-      协同者拉去源码到本地
 
             gig clone 远程仓库
 
-    3.      协同者创建自己的分支
+-      协同者创建自己的分支
 
             git branch 分支名称
 
-    4.      切换分支
+-      切换分支
 
             git checkout 分支名称
     
-    5.      推送分支
+-      推送分支
 
             git push origin 分支名称
     
-    6.      当协同者修改完成后
+-      当协同者修改完成后
 
             git checkout 分支名称
 
