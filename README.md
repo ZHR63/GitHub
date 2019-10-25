@@ -84,22 +84,23 @@
 
 ### 远程分支合并
 (假设你本地在使用的分支为a(master也是一样的)，需要合并的远程分支为b)
+
     1.git clone 远程项目链接
 
-    2.在本地新建一个与远程的分支b相同(被合并的版本)的分支b
-        git checkout -b b origin/b
+    2.在本地新建一个与远程的分支 same 相同(被合并的版本)的分支same
+        git checkout -b origin/same
     
     3.将远程代码pull到本地
-        git pull origin b
+        git pull origin same
 
-    4.返回到你的分支a
-        git checkout a
+    4.返回到你的分支
+        git checkout  master
 
     5.合并分支a与分支b
-        git merge b
+        git merge same
     
     6.把本地的分支a同步到远程
-        git push origin a
+        git push origin master
 
 
 ### GitHub上的README.md应该怎么写
